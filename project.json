@@ -1,0 +1,23 @@
+{
+  "overview": "An advanced interactive educational web app that visualizes how a CPU executes instructions internally using micro-operations across clock cycles. Users select instructions like ADD, SUB, LOAD, or STORE and watch animated data flow between CPU components step by step.",
+  "features": [
+    "Animated CPU diagram with Memory, PC, MAR, MDR, IR, ALU, and Registers",
+    "Step-by-step micro-operation visualization across clock cycles T0–T5",
+    "Play, Pause, Next, Previous, and Reset simulation controls",
+    "Beginner and Advanced modes with component tooltips",
+    "Neon glow dark theme with smooth animated data-flow arrows",
+    "Real-time register value updates and ALU operation display",
+    "Progress bar and info panel for current execution step"
+  ],
+  "category": "education",
+  "tags": [
+    "cpu",
+    "education",
+    "visualization",
+    "micro-operations",
+    "animation",
+    "interactive",
+    "computer-science"
+  ],
+  "last_updated": "2026-04-13T17:14:35.442Z"
+}
