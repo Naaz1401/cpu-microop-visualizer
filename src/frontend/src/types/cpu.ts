@@ -25,9 +25,20 @@ export type ArrowId =
   | "alu→r2"
   | "alu→r3"
   | "cu→mar"
+  | "cu→pc"
   | "r1→mdr"
+  | "r2→mdr"
+  | "r3→mdr"
+  | "mdr→r1"
   | "mdr→memory"
   | "mar→memory";
+
+// Instruction categories for grouping in the selector
+export type InstructionCategory =
+  | "Arithmetic"
+  | "Logic"
+  | "Data Transfer"
+  | "Control Flow";
 
 // Register state snapshot
 export interface RegisterState {
@@ -57,6 +68,7 @@ export interface Instruction {
   id: string;
   label: string;
   description: string;
+  category: InstructionCategory;
   operations: MicroOperation[];
 }
 
